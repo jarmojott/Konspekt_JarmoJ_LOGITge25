@@ -39,16 +39,24 @@ internal class Program
 
         int vanus = 0;
 
-        Console.Write("Sisesta oma vanus: ");
-        vanus= int.Parse(Console.ReadLine());
+        //Console.Write("Sisesta oma vanus: ");
+        //vanus= int.Parse(Console.ReadLine());
 
-        if (vanus >= 18)
-        {                      
-            Console.WriteLine("Siin on sinu mojito 🍸");
-        } else
-        {
-            Console.WriteLine("Sissepääs keelatud!");
-        }
+        //if (vanus >= 18)
+        //{                      
+        //    Console.WriteLine("Siin on sinu mojito 🍸");
+        //} else
+        //{
+        //    Console.WriteLine("Sissepääs keelatud!");
+        //}
+
+        /*
+        klient tahab programmi:
+        - küsib kasutaja nime
+        - küsib kasutaja parooli
+        - logib sisse kui kui parool ja nimi on õige
+        Vooskeem juba tehtud
+         */
     }
 }
 
