@@ -1,0 +1,2 @@
+# Konspekt_JarmoJ_LOGITge25
+Programmeerimise aluste konspekt
