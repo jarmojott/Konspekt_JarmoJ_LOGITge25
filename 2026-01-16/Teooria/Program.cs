@@ -27,33 +27,33 @@ namespace Teooria   //nimeruum, sisaldab {} vahel konteinerit kus asub kogu kood
             // <taane>  - aitab koodi kirjutamisel/lugemisel mõista kus bloki sees mingi element asub (koodi treppimine).
 
             // <--MUUTUJAD-->
-            string naidis = ""; /* muutuja defineerimine algab alati andmetüübist millele järgneb muutuja nimi teksti kujul (kohustuslik osa)
-                                 * Peale definitsiooni saab soovi korral ka kohe omistada sellele väärtuse kasutades omistusoperaatori.
-                                 * Lause lõppeb nagu alati semikooloniga (;)
-                                 */
+            /*  string naidis = ""; muutuja defineerimine algab alati andmetüübist millele järgneb muutuja nimi teksti kujul (kohustuslik osa)
+                                  * Peale definitsiooni saab soovi korral ka kohe omistada sellele väärtuse kasutades omistusoperaatori.
+                                  * Lause lõppeb nagu alati semikooloniga (;)
+                                  */
 
             // <--CASTIMISEE NÄIDE-->
-            int minuArv = 9001;
-            Console.WriteLine(minuArv);
-            double minuDouble = minuArv;
-            Console.WriteLine(minuDouble);
+            //int minuArv = 9001;
+            //Console.WriteLine(minuArv);
+            //double minuDouble = minuArv;
+            //Console.WriteLine(minuDouble);
 
-            double uusDouble = 6.7;
-            Console.WriteLine(uusDouble);
-            int uusInt = (int)uusDouble; //castimine kus on mingi andmekadu
-            Console.WriteLine(uusInt);
+            //double uusDouble = 6.7;
+            //Console.WriteLine(uusDouble);
+            //int uusInt = (int)uusDouble; //castimine kus on mingi andmekadu
+            //Console.WriteLine(uusInt);
 
-            double newDouble = 1.23d;
-            float newFloat = (float)newDouble;
+            //double newDouble = 1.23d;
+            //float newFloat = (float)newDouble;
 
-            long newLong = (long)newFloat;
-            int newInt = (int)newLong;
-            char newChar = (char)newInt;
+            //long newLong = (long)newFloat;
+            //int newInt = (int)newLong;
+            //char newChar = (char)newInt;
 
-            int backToInt = newChar; // castimine kus pole andmekadu
-            long backToLong = backToInt;
-            float backToFloat = backToLong;
-            double backToDouble = backToLong;
+            //int backToInt = newChar; // castimine kus pole andmekadu
+            //long backToLong = backToInt;
+            //float backToFloat = backToLong;
+            //double backToDouble = backToLong;
 
             //TEISENDAMINE
             /* Castmine on arvu teisendamine ühest andmetüübist teise:
@@ -66,6 +66,93 @@ namespace Teooria   //nimeruum, sisaldab {} vahel konteinerit kus asub kogu kood
              * int minuArv = 9001;
              * double minuDouble = minuArv - castimine kus pole andmekadu
              */
+
+            // KALKULAATOR (SWITCH)
+            //float arv1 = 0;
+            //Console.Write("Sisesta esimene arv: ");
+            //arv1 = float.Parse(Console.ReadLine());
+
+            //float arv2 = 0;
+            //Console.Write("Sisesta teine arv: ");
+            //arv2 = float.Parse(Console.ReadLine());
+
+            //Console.Write("Sisesta tehte tüüp (+ - * / ^ V): ");
+            //string tehteTüüp = " ";
+            //tehteTüüp = Console.ReadLine();
+
+            //double tehteTulemus = 0;
+
+            //if (tehteTüüp != "")
+            //{
+            //    switch (tehteTüüp)
+            //    {
+            //        case "+":
+            //            tehteTulemus = arv1 + arv2;
+            //            break;
+            //        case "-":
+            //            tehteTulemus = arv1 - arv2;
+            //            break;
+            //        case "*":
+            //            tehteTulemus = arv1 * arv2;
+            //            break;
+            //        case "/":
+            //            tehteTulemus = arv1 / arv2;
+            //            break;
+            //        case "^":
+            //            tehteTulemus = Math.Pow(arv1, arv2);
+            //            break;
+            //        case "V":
+            //            tehteTulemus = Math.Pow(arv1, 1 / arv2);
+            //            break;
+            //        default:
+            //            Console.WriteLine("Tehte tüüp pole sobilik!");
+            //            return; // return mitte break
+            //    }
+            //    Console.WriteLine($"Tehte tulemus on: {arv1} {tehteTüüp} {arv2} = {tehteTulemus}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Tehte tüüp pole sobilik!");
+            //}
+
+
+            // KALKULAATOR (IF ELSE)
+            float arv1 = 0;
+            Console.Write("Sisesta esimene arv: ");
+            arv1 = float.Parse(Console.ReadLine());
+
+            float arv2 = 0;
+            Console.Write("Sisesta teine arv: ");
+            arv2 = float.Parse(Console.ReadLine());
+
+            Console.Write("Sisesta tehte tüüp (+ - * / ^ V): ");
+            string tehteTüüp = " ";
+            tehteTüüp = Console.ReadLine();
+
+            double tehteTulemus = 0;
+            if (tehteTüüp != "")
+            {
+                if (tehteTüüp == "+")
+                    tehteTulemus = arv1 + arv2;
+                else if (tehteTüüp == "-")
+                    tehteTulemus = arv1 - arv2;
+                else if (tehteTüüp == "*")
+                    tehteTulemus = arv1 * arv2;
+                else if (tehteTüüp == "/")
+                    tehteTulemus = arv1 / arv2;
+                else if (tehteTüüp == "^")
+                    tehteTulemus = Math.Pow(arv1, arv2);
+                else if (tehteTüüp == "V")
+                    tehteTulemus = Math.Pow(arv1, 1 / arv2);
+                else
+                {
+                    Console.WriteLine("Tehte tüüp pole sobilik!");
+                    return;
+                }
+                Console.WriteLine($"Tehte tulemus on: {arv1} {tehteTüüp} {arv2} = {tehteTulemus}");
+            }
+            else
+                Console.WriteLine("Tehte tüüp pole sobilik!");
         }
     }
 }

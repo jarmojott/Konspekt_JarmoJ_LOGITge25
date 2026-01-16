@@ -1,0 +1,266 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram id="YZnYlmHgzCT_3UkOlV2b" name="Leht-1">
+    <mxGraphModel dx="1878" dy="1092" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-1" target="HzzN-y3a3UfBmWthH7Zz-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-1" value="ALGUS" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+          <mxGeometry x="70" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-2" target="HzzN-y3a3UfBmWthH7Zz-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-2" value="Kuva tekst: &lt;br&gt;&quot;Sisesta esimene arv: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="190" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-4" target="HzzN-y3a3UfBmWthH7Zz-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-4" value="Kuva tekst: &lt;br&gt;&quot;Sisesta esimene arv: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="330" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-6" target="HzzN-y3a3UfBmWthH7Zz-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-6" value="Loome float tüüpi muutuja nimega&amp;nbsp;&lt;br&gt;&lt;b&gt;arv1&lt;/b&gt;&amp;nbsp;mille algväärtus on null." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="470" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-8" target="HzzN-y3a3UfBmWthH7Zz-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-8" value="Oota kuni kasutaja sisestab terminali väärtuse mille omistame muutujale &lt;b&gt;arv1&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="1">
+          <mxGeometry x="55" y="610" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-10" target="HzzN-y3a3UfBmWthH7Zz-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-10" value="Kuva tekst: &lt;br&gt;&quot;Sisesta teine arv: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="610" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-11" target="HzzN-y3a3UfBmWthH7Zz-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-11" value="Loome float tüüpi muutuja nimega&amp;nbsp;&lt;br&gt;&lt;b&gt;arv2&lt;/b&gt;&amp;nbsp;mille algväärtus on null." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="750" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-12" target="HzzN-y3a3UfBmWthH7Zz-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-12" value="Oota kuni kasutaja sisestab terminali väärtuse mille omistame muutujale &lt;b&gt;arv2&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="1">
+          <mxGeometry x="425" y="890" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-18" target="HzzN-y3a3UfBmWthH7Zz-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-18" value="Kuva tekst: &quot;Mis tüüpi tehet soovid teha? (+|-|*|/|^|V)&quot;&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="890" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-20" target="HzzN-y3a3UfBmWthH7Zz-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-20" value="Loome sõne tüüpi muutuja&lt;br&gt;&amp;nbsp;nimega &lt;b&gt;tehteTüüp &lt;br&gt;&lt;/b&gt;mille algväärtus on tühjus" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1000" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-25" target="HzzN-y3a3UfBmWthH7Zz-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-25" value="Oota kuni kasutaja sisestab terminali väärtuse mille omistame muutujale&amp;nbsp;&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;tehteTüüp&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="1">
+          <mxGeometry x="55" y="1160" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-27" target="HzzN-y3a3UfBmWthH7Zz-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-35" value="EI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-34">
+          <mxGeometry x="-0.05" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-27" target="HzzN-y3a3UfBmWthH7Zz-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-38" value="JAH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-37">
+          <mxGeometry x="-0.1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-27" value="Kas muutuja &lt;b&gt;tehteTüüp väärtus on võrdne väärtusega &#39;+&#39;&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1590" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-29" target="HzzN-y3a3UfBmWthH7Zz-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-29" value="Loo double muutuja &lt;b&gt;tehteTulemus&lt;/b&gt;&amp;nbsp;mille algväärtus on 0;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1150" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-33" target="HzzN-y3a3UfBmWthH7Zz-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-41" value="JAH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-40">
+          <mxGeometry x="0.1" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-33" target="HzzN-y3a3UfBmWthH7Zz-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-47" value="EI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-43">
+          <mxGeometry y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-33" value="Kas muutuja &lt;b&gt;tehteTüüp väärtus on võrdne väärtusega &#39;-&#39;&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1870" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-36" target="HzzN-y3a3UfBmWthH7Zz-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-36" value="Omista muutujasse &lt;b&gt;tehteTulemus &lt;/b&gt;väärtus mis saadakse tehtena&amp;nbsp;arv1+arv2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1650" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-39" target="HzzN-y3a3UfBmWthH7Zz-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-39" value="Omista muutujasse &lt;b&gt;tehteTulemus &lt;/b&gt;väärtus mis saadakse tehtena&amp;nbsp;&amp;nbsp;arv1-arv2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1925" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-42" target="HzzN-y3a3UfBmWthH7Zz-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-46" value="JAH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-45">
+          <mxGeometry x="0.0429" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-42" target="HzzN-y3a3UfBmWthH7Zz-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-50" value="EI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-49">
+          <mxGeometry y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-42" value="Kas muutuja &lt;b&gt;tehteTüüp väärtus on võrdne väärtusega &#39;*&#39;&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="230" y="2150" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-44" target="HzzN-y3a3UfBmWthH7Zz-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-44" value="Omista muutujasse &lt;br&gt;&lt;b&gt;tehteTulemus &lt;/b&gt;väärtus&lt;br&gt;&amp;nbsp;mis saadakse tehtena arv1*arv2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="2205" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-48" target="HzzN-y3a3UfBmWthH7Zz-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-53" value="JAH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-52">
+          <mxGeometry x="-0.0833" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-48" target="HzzN-y3a3UfBmWthH7Zz-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-56" value="EI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-55">
+          <mxGeometry y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-48" value="Kas muutuja &lt;b&gt;tehteTüüp väärtus on võrdne väärtusega &#39;/&#39;&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="230" y="2430" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-51" target="HzzN-y3a3UfBmWthH7Zz-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-51" value="Omista muutujasse&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;b&gt;tehteTulemus &lt;/b&gt;väärtus mis saadakse tehtena arv1/arv2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="2485" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-54" target="HzzN-y3a3UfBmWthH7Zz-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-59" value="EI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-58">
+          <mxGeometry x="-0.225" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-54" target="HzzN-y3a3UfBmWthH7Zz-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-62" value="JAH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-61">
+          <mxGeometry x="-0.2162" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-54" value="Kas muutuja &lt;b&gt;tehteTüüp väärtus on võrdne väärtusega &#39;^&#39;&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="230" y="2710" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-57" target="HzzN-y3a3UfBmWthH7Zz-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-65" value="JAH&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-64">
+          <mxGeometry x="-0.0526" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-57" target="HzzN-y3a3UfBmWthH7Zz-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-71" value="EI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-70">
+          <mxGeometry x="-0.0769" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-57" value="Kas muutuja &lt;b&gt;tehteTüüp väärtus on võrdne väärtusega &#39;V&#39;&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="230" y="2990" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-60" value="Omista muutujasse&amp;nbsp;&lt;br&gt;&lt;b&gt;tehteTulemus&amp;nbsp;&lt;/b&gt;väärtus mis&lt;br&gt;&amp;nbsp;saadakse Math.Pow() meetodit mille parameetrid on arv1j ja arv2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="2765" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-63" target="HzzN-y3a3UfBmWthH7Zz-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-63" value="Omista muutujasse&amp;nbsp;&lt;br&gt;&lt;b&gt;tehteTulemus&amp;nbsp;&lt;/b&gt;väärtus mis&lt;br&gt;&amp;nbsp;saadakse Math.Pow() meetodit mille parameetrid on arv1 ja 1/arv2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="3045" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-69" target="HzzN-y3a3UfBmWthH7Zz-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-69" value="Kuva tekst: &lt;br&gt;&lt;i&gt;&quot;Tehte tüüp ei sobi!&quot;&lt;/i&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="3260" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-90" target="HzzN-y3a3UfBmWthH7Zz-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-90" value="&#xa;&lt;span style=&quot;color: rgb(255, 255, 255); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(27, 29, 30); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Kuva tekst:&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; box-shadow: none !important; color: rgb(255, 255, 255); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(27, 29, 30); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(27, 29, 30); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;&quot;Tehte tulemus on&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;forced-color-adjust: none; box-shadow: none !important; color: rgb(255, 255, 255); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(27, 29, 30); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;b style=&quot;forced-color-adjust: none; box-shadow: none !important; color: rgb(255, 255, 255); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(27, 29, 30); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;arv1 tehteTüüp arv2&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(27, 29, 30); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;=&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;b style=&quot;forced-color-adjust: none; box-shadow: none !important; color: rgb(255, 255, 255); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(27, 29, 30); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;tehteTulemus&lt;/b&gt;&#xa;&#xa;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="827" y="3470" width="173" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-97" value="LÕPP" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+          <mxGeometry x="560" y="3460" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-102" target="HzzN-y3a3UfBmWthH7Zz-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-117" value="JAH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-116">
+          <mxGeometry x="0.0833" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-102" target="HzzN-y3a3UfBmWthH7Zz-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-120" value="EI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HzzN-y3a3UfBmWthH7Zz-119">
+          <mxGeometry x="-0.8934" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-102" value="Kas &lt;b&gt;tehteTüüp &lt;/b&gt;omab väärtust?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" vertex="1" parent="1">
+          <mxGeometry x="282.5" y="1320" width="155" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="HzzN-y3a3UfBmWthH7Zz-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.497;entryY=0.133;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="HzzN-y3a3UfBmWthH7Zz-60" target="HzzN-y3a3UfBmWthH7Zz-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
