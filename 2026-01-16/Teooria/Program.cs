@@ -7,9 +7,9 @@ namespace Teooria   //nimeruum, sisaldab {} vahel konteinerit kus asub kogu kood
         static void Main(string[] args) // on klassi peamine meetod mis käivitatakse alati esimesena
         {
             // <-SÜNTAKS->
-            Console.WriteLine("Ommik!");
-            string vastus = Console.ReadLine();
-            Console.WriteLine("=)");
+            //Console.WriteLine("Ommik!");
+            //string vastus = Console.ReadLine();
+            //Console.WriteLine("=)");
             // ';'      - iga koodirida peab lõppema selle lauselõpumärgiga.
             // Console  - on C# käsurea adresseerimine teek millega saab erinevad operatsioone teha.
             // '.'      - kasutakse adresseerimiseks eelnevast klassist mingit meetodit.
@@ -24,6 +24,48 @@ namespace Teooria   //nimeruum, sisaldab {} vahel konteinerit kus asub kogu kood
             // '//'       - tähistab 1 realist kommentaari koodis
             // '/* */'    - tähistab mitmerealist kommentaari koodis
             // '///'    - Meetodi kirjelduse kommentaar mille kuvab välja ka IDE ehk koodiredaktor
+            // <taane>  - aitab koodi kirjutamisel/lugemisel mõista kus bloki sees mingi element asub (koodi treppimine).
+
+            // <--MUUTUJAD-->
+            string naidis = ""; /* muutuja defineerimine algab alati andmetüübist millele järgneb muutuja nimi teksti kujul (kohustuslik osa)
+                                 * Peale definitsiooni saab soovi korral ka kohe omistada sellele väärtuse kasutades omistusoperaatori.
+                                 * Lause lõppeb nagu alati semikooloniga (;)
+                                 */
+
+            // <--CASTIMISEE NÄIDE-->
+            int minuArv = 9001;
+            Console.WriteLine(minuArv);
+            double minuDouble = minuArv;
+            Console.WriteLine(minuDouble);
+
+            double uusDouble = 6.7;
+            Console.WriteLine(uusDouble);
+            int uusInt = (int)uusDouble; //castimine kus on mingi andmekadu
+            Console.WriteLine(uusInt);
+
+            double newDouble = 1.23d;
+            float newFloat = (float)newDouble;
+
+            long newLong = (long)newFloat;
+            int newInt = (int)newLong;
+            char newChar = (char)newInt;
+
+            int backToInt = newChar; // castimine kus pole andmekadu
+            long backToLong = backToInt;
+            float backToFloat = backToLong;
+            double backToDouble = backToLong;
+
+            //TEISENDAMINE
+            /* Castmine on arvu teisendamine ühest andmetüübist teise:
+             * Automaatne (implicit) - kui toimub väiksemast andmetüübist suuremasse ning andmekadu pole
+             * Manuaalne (explicit)  - kui toimub suuremast andetüübist väiksemasse ning on võimalik andmekadu kus on vaja kasutada suurema andmetüübi ees sulgude sees olevat uut andmetüüpi
+             * EXPLICIT:
+             * double uusDouble = 6.7;
+             * int uusInt = (int)uusDouble; - castimine kus on võimalik andmekadu
+             * IMPILICIT
+             * int minuArv = 9001;
+             * double minuDouble = minuArv - castimine kus pole andmekadu
+             */
         }
     }
 }
