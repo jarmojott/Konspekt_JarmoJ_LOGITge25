@@ -20,7 +20,10 @@ namespace Teooria   //nimeruum, sisaldab {} vahel konteinerit kus asub kogu kood
             // ""       - jutumärgid tähistad string ehk tekst tüüpi väärtust mis asub jutumärkide vahel
             // 'string' - tekstipõhine andmeetüüp mis eelneb muutuja nimele. Samuti võib andemetüüp sisalda ka funktsioone. EST: sõne
             // 'vastus' - muutuja definitsioon koos tema nimega kuhu omistatakse väärtus omistusoperaatoriga =
-            // 'ReadLine' - meetod mis loeb käsurealt sisse väärtusse string andmetüübina. 
+            // 'ReadLine' - meetod mis loeb käsurealt sisse väärtusse string andmetüübina.
+            // '//'       - tähistab 1 realist kommentaari koodis
+            // '/* */'    - tähistab mitmerealist kommentaari koodis
+            // '///'    - Meetodi kirjelduse kommentaar mille kuvab välja ka IDE ehk koodiredaktor
         }
     }
 }
