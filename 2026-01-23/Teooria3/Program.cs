@@ -31,30 +31,57 @@
 
             //NÄIDE:
 
-            int kasutajaPikkus = 0;
-            int vennaPikkus = 0;
-            int emaPikkus = 0;
-            int isaPikkus = 0;
+            //int kasutajaPikkus = 0;
+            //int vennaPikkus = 0;
+            //int emaPikkus = 0;
+            //int isaPikkus = 0;
 
-            Console.Write("Mis on sinu pikkus (cm): ");
-            kasutajaPikkus = int.Parse(Console.ReadLine());
+            //Console.Write("Mis on sinu pikkus (cm): ");
+            //kasutajaPikkus = int.Parse(Console.ReadLine());
 
-            Console.Write("Mis on sinu venna pikkus (cm): ");
-            vennaPikkus = int.Parse(Console.ReadLine());
+            //Console.Write("Mis on sinu venna pikkus (cm): ");
+            //vennaPikkus = int.Parse(Console.ReadLine());
 
-            Console.Write("Mis on sinu ema pikkus (cm): ");
-            emaPikkus = int.Parse(Console.ReadLine());
+            //Console.Write("Mis on sinu ema pikkus (cm): ");
+            //emaPikkus = int.Parse(Console.ReadLine());
 
-            Console.Write("Mis on sinu isa pikkus (cm): ");
-            isaPikkus = int.Parse(Console.ReadLine());
+            //Console.Write("Mis on sinu isa pikkus (cm): ");
+            //isaPikkus = int.Parse(Console.ReadLine());
+
+            //// manuaalne castimine
+            //float pereKeskmine = ((float)kasutajaPikkus + vennaPikkus + emaPikkus + isaPikkus) / 4 / 100; //meetrites
+            //float vanemateKeskmine = ((float)emaPikkus + isaPikkus) / 2 / 100; //meetrites
+            //float lasteKeskmine = ((float)kasutajaPikkus + vennaPikkus) / 2 / 100; //meetrites
+
+            //float vahe = 0;
+
+            //if (vanemateKeskmine > lasteKeskmine)
+            //    vahe = vanemateKeskmine - lasteKeskmine;
+            //else
+            //    vahe = lasteKeskmine - vanemateKeskmine;
+
+            //Console.WriteLine("Perekeskmine on " + Math.Round(pereKeskmine, 2) + "m.\nVanematekeskmine on " + Math.Round(vanemateKeskmine, 2) + "m.\nLastekeskmine on " + Math.Round(lasteKeskmine, 2) + "m.\nVahe on " + Math.Round(vahe, 2) + "m.");
+
+
+
+            //JÄRJENDID
+            List<int> vanused = new List<int>();
+            List<string> nimed = new List<string> { "oma", "venna", "isa", "ema" };
+            int i = 0;
+            do
+            {
+                Console.Write("Sisesta " + nimed.ElementAt(i) + " pikkus (cm): ");
+                vanused.Add(int.Parse(Console.ReadLine()));
+                i++;
+            } while (i < nimed.Count);
+
 
             // manuaalne castimine
-            float pereKeskmine = ((float)kasutajaPikkus + vennaPikkus + emaPikkus + isaPikkus) / 4 / 100; //meetrites
-            float vanemateKeskmine = ((float)emaPikkus + isaPikkus) / 2 / 100; //meetrites
-            float lasteKeskmine = ((float)kasutajaPikkus + vennaPikkus) / 2 / 100; //meetrites
+            float pereKeskmine = ((float)vanused.ElementAt(0) + vanused.ElementAt(1) + vanused.ElementAt(2) + vanused.ElementAt(3)) / nimed.Count / 100; //meetrites
+            float vanemateKeskmine = ((float)vanused.ElementAt(2) + vanused.ElementAt(3)) / 2 / 100; //meetrites
+            float lasteKeskmine = ((float)vanused.ElementAt(0) + vanused.ElementAt(1)) / 2 / 100; //meetrites
 
             float vahe = 0;
-
             if (vanemateKeskmine > lasteKeskmine)
                 vahe = vanemateKeskmine - lasteKeskmine;
             else
