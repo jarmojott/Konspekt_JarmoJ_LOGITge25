@@ -68,26 +68,55 @@
             List<int> vanused = new List<int>();
             List<string> nimed = new List<string> { "oma", "venna", "isa", "ema" };
             int i = 0;
+
+            //TSÜKKEL
+            //do
+            //{
+            //    Console.Write("Sisesta " + nimed.ElementAt(i) + " pikkus (cm): ");
+            //    vanused.Add(int.Parse(Console.ReadLine()));
+            //    i++;
+            //} while (i < nimed.Count);
+
+
+            //// manuaalne castimine
+            //float pereKeskmine = ((float)vanused.ElementAt(0) + vanused.ElementAt(1) + vanused.ElementAt(2) + vanused.ElementAt(3)) / nimed.Count / 100; //meetrites
+            //float vanemateKeskmine = ((float)vanused.ElementAt(2) + vanused.ElementAt(3)) / 2 / 100; //meetrites
+            //float lasteKeskmine = ((float)vanused.ElementAt(0) + vanused.ElementAt(1)) / 2 / 100; //meetrites
+
+            //float vahe = 0;
+            //if (vanemateKeskmine > lasteKeskmine)
+            //    vahe = vanemateKeskmine - lasteKeskmine;
+            //else
+            //    vahe = lasteKeskmine - vanemateKeskmine;
+
+            //Console.WriteLine("Perekeskmine on " + Math.Round(pereKeskmine, 2) + "m.\nVanematekeskmine on " + Math.Round(vanemateKeskmine, 2) + "m.\nLastekeskmine on " + Math.Round(lasteKeskmine, 2) + "m.\nVahe on " + Math.Round(vahe, 2) + "m.");
+
+            /*  <-- TSÜKLID (LOOP) -->
+             *  Tsüklid on programmeerimises viis kuidas automatiseerida korduvaid tegevusi mis hoiab kokku kirjutamisvaeva, ning vähendab vigu.
+             *  C# on 4 peamist tsüklit:
+             *  1. do-while
+             *  2. while
+             *  3. for
+             *  4. foreach
+             *  
+             *  Tsüklitel on kolm peamist komponenti: käskluslause ise, tingimus ja täidetav kood.
+             *  
+             *  #DO-WHILE tsükkel:
+             *  Erineb kõikidest teistest tsüklitest sellega, et tingimuse kontroll toimub peale esimest tegevuseringi. Kõikides teistes tsüklites on alati tingimus alati enne tegevust.
+             *  Algab kaitstud sõnaga 'do' millele järgneb täidetav koodiblokk.
+             *  Esimene iteratsioon täidetakse alati ilma tingimuskontrollita.
+             *  Tingimuskontrollis kasutame tüüpiliselt indeks muutujat mis peab koodiblokkis muutuma (ilma selleta jookseks tsükkel igavesti).
+             *  Koodiblokk lõppeb kaitstud sõnaga "while" millele järgneb sulgudes tingimuskontroll mis toimub peale koodibloki täitmist.
+             *  Kuniks tingimus on tõene jätkub tsükkel käivitades tegevusbloki jälle uuesti algusest. Tsükkel lõppeb ainult siis kui tingimuskontroll annab tulemuse 'väär' misjärel väljutakse tsüklist.
+             *  
+             */
+            int tsükliMuutuja = 0; //muutuja mis täidab tingimuskontrolli ja indeksi rolli
             do
             {
-                Console.Write("Sisesta " + nimed.ElementAt(i) + " pikkus (cm): ");
-                vanused.Add(int.Parse(Console.ReadLine()));
-                i++;
-            } while (i < nimed.Count);
+                Console.WriteLine(tsükliMuutuja);
+                tsükliMuutuja++;
+            } while (tsükliMuutuja != 5);
 
-
-            // manuaalne castimine
-            float pereKeskmine = ((float)vanused.ElementAt(0) + vanused.ElementAt(1) + vanused.ElementAt(2) + vanused.ElementAt(3)) / nimed.Count / 100; //meetrites
-            float vanemateKeskmine = ((float)vanused.ElementAt(2) + vanused.ElementAt(3)) / 2 / 100; //meetrites
-            float lasteKeskmine = ((float)vanused.ElementAt(0) + vanused.ElementAt(1)) / 2 / 100; //meetrites
-
-            float vahe = 0;
-            if (vanemateKeskmine > lasteKeskmine)
-                vahe = vanemateKeskmine - lasteKeskmine;
-            else
-                vahe = lasteKeskmine - vanemateKeskmine;
-
-            Console.WriteLine("Perekeskmine on " + Math.Round(pereKeskmine, 2) + "m.\nVanematekeskmine on " + Math.Round(vanemateKeskmine, 2) + "m.\nLastekeskmine on " + Math.Round(lasteKeskmine, 2) + "m.\nVahe on " + Math.Round(vahe, 2) + "m.");
         }
     }
 }
