@@ -1,0 +1,85 @@
+int suunaKood = 0;
+/* 
+'int' tähistab täisarvulist andmetüüpi. Andmetüübi määramisega algab alati uue muutuja loomine
+'suunaKood' on kasutaja poolt antud nimi muutujale.
+'=' on omistamise sümbol millega saab muutujale määrata väärtuse
+'0' on hetkel kasutaja poolt määratud algväärtus muutujale 'suunaKood'
+';' iga koodilause lõppeb alati semikooloniga.
+*/
+Console.WriteLine("Palun sisesta oma suunakood");
+/*
+'Console' on süsteemiklass või ka moodul mida saab kasutada käsurea juhtimiseks. Klassi nimi algab üldjuhul alati suure tähega.
+'.' eraldaja millega saab klassi seest kutsuda välja erinevaid funktsioone.
+'WriteLine' on meetodi nimi mis on valitud klassis seest, ning mille eesmärk on käsureale kuvada tekstipõhist infot
+'()' Meetodi nimi peab alati lõppema sulgudega, ning mille sisse läheb omakorda parameeter.
+'"Palun sisesta oma suunakood"' on sõne mis antakse parameetrina kaasa meetodile WriteLine
+';' iga koodilause lõppeb alati semikooloniga.
+*/
+suunaKood = int.Parse(Console.ReadLine());
+/*
+'suunaKood' muutuja nimi mida hakkame kasutama.
+'=' omistamise sümbol millega anname muutujale uue väärtuse.
+'int' täisarvuline andmetüüp mis siin kontekstis on kasutusel süsteemiklassina ehk moodulina.
+'.' eraldaja millega saab klassi seest kutsuda välja meetodeid.
+'Parse' meetodi nimi mis on hetkel välja kutsutud
+'()' Meetodi nimi peab alati lõppema sulgudega, ning mille sisse läheb hetkel parameeter.
+'Console' on süsteemiklass või ka moodul mida saab kasutada käsurea juhtimiseks. Klassi nimi algab üldjuhul alati suure tähega.
+'.' eraldaja millega saab klassi seest kutsuda välja erinevaid funktsioone.
+'ReadLine' meetodi nimi mis on välja kutsutud, ning mille eesmärk on käsureealt andmete salvestamine.
+'()' Meetodi nimi peab alati lõppema sulgudega, ning kuhu sisse hetkel parameetrit ei vajata.
+';' iga koodilause lõppeb alati semikooloniga.
+*/
+if (suunaKood > 9999 && suunaKood < 100000)
+/*
+'if' kaitstus sõna millega algab tingimuslause üksi või selle mitme osaline ahel.
+'()' sulgude sisse käib avaldis mille tõese väärtuse puhul käivitub koodiblokk või rida.
+'suunaKood > 9999' esimene tingimus mis nõuab et muutuja suunaKood oleks suurem kui arv 9999
+'&&' loogiline tehe 'AND', mida kasutatakse tingimuste kirjeldamisel, ning mis annab tõese vastuse "true" juhul kui mõlemal pool märki "&&" olevad tingimused omakorda annavad oma avaldise tulemusena "true"
+'suunaKood < 100000' teine tingimus mis nõuab et muutuja suunaKood oleks väiksem kui arv 100 000
+*/
+{
+	Console.WriteLine("Ahha nüüd teasn kus sa elad");
+}
+/*
+'{}' koodiblokk kuhu sisse käivad koodilaused mis täidetakse kui tingimuse avaldis osutub tõeseks ehk 'true'
+'Console' on süsteemiklass või ka moodul mida saab kasutada käsurea juhtimiseks. Klassi nimi algab üldjuhul alati suure tähega.
+'.' eraldaja millega saab klassi seest kutsuda välja erinevaid funktsioone.
+'WriteLine' on meetodi nimi mis on valitud klassis seest, ning mille eesmärk on käsureale kuvada tekstipõhist infot.
+'()' Meetodi nimi peab alati lõppema sulgudega, ning mille sisse läheb omakorda parameeter.
+'"Nüüd tean kus sa elad."' on sõne mis antakse parameetrina kaasa meetodile WriteLine
+';' iga koodilause lõppeb alati semikooloniga.
+*/
+else if (suunaKood <= 9999)
+/*
+'else if' kaitstud sõna kust algab järel-tingimuslause ehk see peab järgnema eelnevale tingimuslausele ühes ja samas ahelas. See täidetakse ainult juhul kui sellel eelnev tingimuslause avaldis on osutunud vääraks ehk 'false'
+'()' sulgude sisse käib avaldis mille tõese väärtuse puhul täidetakse vastav koodiblokk või rida.
+'suunaKood <= 9999' tingimus mis nõuab et muutuja suunaKood peab olema väiksem või võrdne arvuga 9999
+*/
+{
+	Console.WriteLine("üks täht on puudu");
+}
+/*
+'{}' koodiblokk kuhu sisse käivad koodilaused mis täidetakse kui tingimuse avaldis osutub tõeseks ehk 'true'
+'Console' on süsteemiklass või ka moodul mida saab kasutada käsurea juhtimiseks. Klassi nimi algab üldjuhul alati suure tähega.
+'.' eraldaja millega saab klassi seest kutsuda välja erinevaid funktsioone.
+'WriteLine' on meetodi nimi mis on valitud klassis seest, ning mille eesmärk on käsureale kuvada tekstipõhist infot.
+'()' Meetodi nimi peab alati lõppema sulgudega, ning mille sisse läheb omakorda parameeter.
+'"üks täht on puudu"' on sõne mis antakse parameetrina kaasa meetodile WriteLine
+';' iga koodilause lõppeb alati semikooloniga.
+*/
+else
+{
+	Console.WriteLine("üks täht on üle");
+}
+/*
+'else' kaitstud sõna mis järgneb alati ainult eelnevale tingimuslausele.
+Siinkohal puudub etteantud tingimus ehk 'else' määrab ära olukorra mis täidetakse alati ainult siis kui kõik eelnevad tingimused on osutunud vääraks.
+Samuti saab 'else' tingimus eksisteerida ainult 1 kord tingimuslause ahelas.
+'{}' koodiblokk kuhu sisse käivad koodilaused mis täidetakse kui tingimuse avaldis osutub tõeseks ehk 'true'
+'Console' on süsteemiklass või ka moodul mida saab kasutada käsurea juhtimiseks. Klassi nimi algab üldjuhul alati suure tähega.
+'.' eraldaja millega saab klassi seest kutsuda välja erinevaid funktsioone.
+'WriteLine' on meetodi nimi mis on valitud klassis seest, ning mille eesmärk on käsureale kuvada tekstipõhist infot.
+'()' Meetodi nimi peab alati lõppema sulgudega, ning mille sisse läheb omakorda parameeter.
+'"üks täht on üle"' on sõne mis antakse parameetrina kaasa meetodile WriteLine
+';' iga koodilause lõppeb alati semikooloniga.
+*/
