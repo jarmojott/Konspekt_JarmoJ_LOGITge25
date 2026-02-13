@@ -56,6 +56,20 @@
         sõnastik1.ContainsKey(4);
         sõnastik1.ContainsValue("uus");
 
+        /*
+         * <--- HULK või MITMIK (TUPLE) --->
+         * Komposiitandmetüüp Tuple näitab et siin saab olla hulk erinevaid andmetüüpe või klasse.
+         * Andmetüübid käivad noolsulgude vahele (minimaalselt 1).
+         * new konstrukturiga saab luua uue tühja Tuple ning see ka kohe algväärtustada.
+         * Erinevalt teistest komposiitandmetüüpidest ei saa loodud objekti enam pärast muuta, vaid see tuleb uuesti konstrueerida ehk tühja objekti luua pole üldse võimalik.
+         * 
+         * <-- TUPLE TÖÖTLUS -->
+         * Elemente saab aadressida ItemX käsuga mis algab alati väärtusega ühest ehk Item1 
+         */
+        Tuple<string, char, int> tupla = new Tuple<string, char, int>("AAA", 'a', 0);
+        tupla = new Tuple<string, char, int>(tupla.Item1, tupla.Item2, 1);
+        Console.WriteLine(tupla.Item3);
+        
 
     }
 }
