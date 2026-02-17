@@ -3,8 +3,7 @@
     static void Main(string[] args)
     {
         Console.Write("Palun sisesta oma nimi: ");
-        string nimi = Console.ReadLine();
-        if (nimi.Equals("Võsapets"))
+        if (Console.ReadLine().Equals("Võsapets"))
             Console.WriteLine("Mine võssa tagasi.");
     }
 }
