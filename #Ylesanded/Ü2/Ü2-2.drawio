@@ -1,0 +1,72 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram id="1Q6fATqsmrm9ee41q9dh" name="Leht-1">
+    <mxGraphModel dx="448" dy="695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8B5MLZYH3IhyfbR6v3d7-1" target="8B5MLZYH3IhyfbR6v3d7-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-1" value="ALGUS" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="1">
+          <mxGeometry x="354" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8B5MLZYH3IhyfbR6v3d7-2" target="8B5MLZYH3IhyfbR6v3d7-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-2" value="Kuva tekst:&lt;br&gt;&quot;Kas hiired meeldivad sulle? (jah/ei)&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="325.5" y="180" width="177" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8B5MLZYH3IhyfbR6v3d7-6" target="8B5MLZYH3IhyfbR6v3d7-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-6" value="Oota kuni kasutaja sisestab väärtuse käsureale ja teisenda see väiketähtedeks." style="whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="1">
+          <mxGeometry x="354" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8B5MLZYH3IhyfbR6v3d7-8" target="8B5MLZYH3IhyfbR6v3d7-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-12" value="JAH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8B5MLZYH3IhyfbR6v3d7-11">
+          <mxGeometry x="-0.0468" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8B5MLZYH3IhyfbR6v3d7-8" target="8B5MLZYH3IhyfbR6v3d7-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-15" value="EI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8B5MLZYH3IhyfbR6v3d7-14">
+          <mxGeometry x="-0.4737" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-8" value="Kas käsureaväärtus&lt;br&gt;&amp;nbsp;on &quot;jah&quot;?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="344" y="440" width="139" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8B5MLZYH3IhyfbR6v3d7-10" target="8B5MLZYH3IhyfbR6v3d7-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="414" y="740" />
+              <mxPoint x="414" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-10" value="Kuva tekst:&lt;br&gt;&quot;IUUUUU&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8B5MLZYH3IhyfbR6v3d7-13" target="8B5MLZYH3IhyfbR6v3d7-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="605" y="720" />
+              <mxPoint x="414" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-13" value="Kuva tekst käsureale:&lt;br&gt;&quot;vähemalt pole piuksuja&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="630" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8B5MLZYH3IhyfbR6v3d7-16" value="LÕPP" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="1">
+          <mxGeometry x="354" y="760" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
