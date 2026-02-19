@@ -6,7 +6,6 @@
         Y3_2();
         Y3_3();
         Y3_4();
-
     }
 
     static void Y3_1()
@@ -42,6 +41,6 @@
         {
             korrutis *= täisArv;
         }
-        Console.WriteLine(string.Join("*", täisArvud) +"=" + korrutis);
+        Console.WriteLine(string.Join("*", täisArvud) + "=" + korrutis);
     }
 }
