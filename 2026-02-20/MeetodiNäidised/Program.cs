@@ -49,7 +49,44 @@
         //{
         //    Console.WriteLine("Tehtetüüp pole valitud, tehet ei sooritata.");
         //}
+
+        //Console.WriteLine("Sisesta oma nimi: ");
+        //string kasutajaNimi = getAnswer();
+        //Console.WriteLine("Tere " + kasutajaNimi);
+        //Console.WriteLine("Palun sisesta ka oma tänavanimi: ");
+        //string tänavaNimi = getAnswer();
+        //Console.WriteLine(kasutajaNimi + " ahha! elad " + tänavaNimi);
+
+        sisestaOmaVanus("Sisetage Teie vanus: ");
     }
+
+    private static void sisestaOmaVanus(string tekst = "Siseta oma vanus: ")
+    {
+        int vanus = 0;
+        do
+        {
+            Console.Write(tekst);
+            vanus = int.Parse(Console.ReadLine());
+        }
+        while (vanus <= 0);
+
+        if (vanus >= 65)
+            Console.WriteLine("Kuidas jalad liiguvad? hästi?");
+        else
+            Console.WriteLine("Mitu monsterit päevas jood?");
+    }
+
+    //private static string getAnswer()
+    //{
+    //    string input = String.Empty;
+    //    do
+    //    {
+    //        Console.Write("Sisestus: ");
+    //        input = Console.ReadLine();
+    //    }
+    //    while (String.IsNullOrEmpty(input));
+    //    return input;
+    //}
 
     //private static double juurimine(float arv1, float arv2)
     //{
