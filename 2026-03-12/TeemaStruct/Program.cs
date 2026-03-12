@@ -1,4 +1,4 @@
-﻿using System.Linq.Expressions;
+﻿using ClassLibrary1;
 using TeemaStruct;
 
 internal class Program
@@ -18,6 +18,8 @@ internal class Program
 
         Console.WriteLine(myCar.getInfo());
         myCar.printAssecories();
+        Class1 thingForMe = new Class1("tegin-midagi");
+        thingForMe.printMessage();
     }
 
     /*

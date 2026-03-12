@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35913.81 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeemaStruct", "TeemaStruct.csproj", "{C9FF8704-429F-4F52-99C9-8442BDC360EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "..\ClassLibrary1\ClassLibrary1.csproj", "{BD0C1DD1-C22A-46B1-8F91-809EDE2235B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C9FF8704-429F-4F52-99C9-8442BDC360EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9FF8704-429F-4F52-99C9-8442BDC360EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9FF8704-429F-4F52-99C9-8442BDC360EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD0C1DD1-C22A-46B1-8F91-809EDE2235B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD0C1DD1-C22A-46B1-8F91-809EDE2235B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD0C1DD1-C22A-46B1-8F91-809EDE2235B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD0C1DD1-C22A-46B1-8F91-809EDE2235B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
