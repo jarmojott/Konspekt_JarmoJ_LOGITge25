@@ -1,4 +1,7 @@
-﻿internal class Program
+﻿using System.Linq.Expressions;
+using TeemaStruct;
+
+internal class Program
 {
     static void Main(string[] args)
     {
@@ -11,6 +14,10 @@
 
         Console.WriteLine(minuAsukoht2.ToString());
 
+        Car myCar = new Car("Yaris", CarMark.Toyota, "ABC123", "dark-grey", 1600, new List<string>() {"BT", "DAB" });
+
+        Console.WriteLine(myCar.getInfo());
+        myCar.printAssecories();
     }
 
     /*
@@ -46,5 +53,18 @@
         {
             Console.WriteLine("Tere-tere!");
         }
+    }
+
+
+    /*
+     * <<< ENUM >>>
+     * Enum on spetsiaalne klassi tüüp mille andmed on muutumatud ehk konstandid.
+     * Praktikas on ta täisarvuline loend mille on lihtsalt sildid küljes.
+     * Defineeritakse enum kaitstud sõnaga enum mille järel on muutuja nimi ning siis koodiblokis tema väärtused loendina eraldatuna komadena. 
+     */
+
+    enum HäireTase
+    {
+        Madal, Keskmine, Kõrge, Kriitiline
     }
 }
