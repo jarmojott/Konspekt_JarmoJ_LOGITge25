@@ -14,12 +14,14 @@ internal class Program
 
         Console.WriteLine(minuAsukoht2.ToString());
 
-        Car myCar = new Car("Yaris", CarMark.Toyota, "ABC123", "dark-grey", 1600, new List<string>() {"BT", "DAB" });
+        Vehicle myCar = new Vehicle("Yaris", CarMark.Toyota, "ABC123", "dark-grey", 1600, new List<string>() {"BT", "DAB" });
 
         Console.WriteLine(myCar.getInfo());
         myCar.printAssecories();
         Class1 thingForMe = new Class1("tegin-midagi");
         thingForMe.printMessage();
+
+
     }
 
     /*
