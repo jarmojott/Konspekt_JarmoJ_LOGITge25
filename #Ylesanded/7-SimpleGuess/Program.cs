@@ -10,12 +10,12 @@
  * teguviis:
  * 
  * salvestamine - 
- * kui mängija tahab väljuda, peab iga event tuvastama sisestusena sõna "exit", 
- * selle puhul mängu tsükli jooksev tingimus seatakse "false" väärtusele, ning küsitakse kas kasutaja soovib mängu salvestada,
- * kui ei, programm lihtsalt lõppeb
- * kui jah, kutsutakse esile salvestusmeetod:
+ * kui mängija tahab väljuda, peab iga event tuvastama sisestusena sõna "exit", (✔)
+ * selle puhul mängu tsükli jooksev tingimus seatakse "false" väärtusele, ning küsitakse kas kasutaja soovib mängu salvestada,(✔)
+ * kui ei, programm lihtsalt lõppeb(✔)
+ * kui jah, kutsutakse esile salvestusmeetod:(✔)
  * 
- * meetod peaks tegutsema nii: (✔)
+ * meetod peaks tegutsema nii:
  * salvesta igaüks eraldi reale.  (✔)
  * igal real on kaks väärtust, ise otsustad kuidas neid eraldatakse, (✔)
  * esimene väärtus kirjeldab mida real hoitakse, (✔)
@@ -23,9 +23,9 @@
  * näiteks rida sisaldab "elud 2" (✔)
  * salvestusfunktsioon vajab kõiki viite muutujat parameetritena, või pakituna ühte tuplesse, (✔)
  * funktsioon sees kirjutab iga parameetri/tuple elemendi kohta uue rea uude, meetodi sees eksisteerivasse listi (✔)
- * list kirjutatakse failioperatsiooniga kinlda nimega failiks, näiteks "savegame.txt" vms.
+ * list kirjutatakse failioperatsiooniga kinlda nimega failiks, näiteks "savegame.txt" vms.(✔)
  * 
- * laadimine - (✔)
+ * laadimine:
  * programmi alguses, kontrollib kas salvestatud kindla nimega fail eksisteerib.(✔)
  * kui on, küsitakse kasutajalt kas ta soovib mängu jätkata salvestatud infoga või mitte.(✔)
  * Kui ei, faili ei loeta, ja algab uus mäng(✔)
