@@ -1,11 +1,11 @@
 ﻿/* salvestus ja laadimine*/
 /*
  * kasutades erinevaid failioperatsioone, tee mängule juurde salvestus, mis jätab meelde palju mängijal on:
- * - raha
- * - elusid
- * - seljakoti sisu
- * - kas ta veritseb
- * - ning mitu hetke elupunkti tal alles on
+ * - raha (✔)
+ * - elusid (✔)
+ * - seljakoti sisu (✔)
+ * - kas ta veritseb (✔)
+ * - ning mitu hetke elupunkti tal alles on (✔)
  * 
  * teguviis:
  * 
@@ -15,37 +15,52 @@
  * kui ei, programm lihtsalt lõppeb
  * kui jah, kutsutakse esile salvestusmeetod:
  * 
- * meetod peaks tegutsema nii:
- * salvesta igaüks eraldi reale. 
- * igal real on kaks väärtust, ise otsustad kuidas neid eraldatakse,
- * esimene väärtus kirjeldab mida real hoitakse,
- * teine on selle hoitava väärtuse tegelik olek.
- * näiteks rida sisaldab "elud 2"
- * salvestusfunktsioon vajab kõiki viite muutujat parameetritena, või pakituna ühte tuplesse,
- * funktsioon sees kirjutab iga parameetri/tuple elemendi kohta uue rea uude, meetodi sees eksisteerivasse listi
+ * meetod peaks tegutsema nii: (✔)
+ * salvesta igaüks eraldi reale.  (✔)
+ * igal real on kaks väärtust, ise otsustad kuidas neid eraldatakse, (✔)
+ * esimene väärtus kirjeldab mida real hoitakse, (✔)
+ * teine on selle hoitava väärtuse tegelik olek. (✔)
+ * näiteks rida sisaldab "elud 2" (✔)
+ * salvestusfunktsioon vajab kõiki viite muutujat parameetritena, või pakituna ühte tuplesse, (✔)
+ * funktsioon sees kirjutab iga parameetri/tuple elemendi kohta uue rea uude, meetodi sees eksisteerivasse listi (✔)
  * list kirjutatakse failioperatsiooniga kinlda nimega failiks, näiteks "savegame.txt" vms.
  * 
- * laadimine - 
- * programmi alguses, kontrollib kas salvestatud kindla nimega fail eksisteerib.
- * kui on, küsitakse kasutajalt kas ta soovib mängu jätkata salvestatud infoga või mitte.
- * Kui ei, faili ei loeta, ja algab uus mäng
- * kui jah, kutsutakse esile laadimismeetod:
+ * laadimine - (✔)
+ * programmi alguses, kontrollib kas salvestatud kindla nimega fail eksisteerib.(✔)
+ * kui on, küsitakse kasutajalt kas ta soovib mängu jätkata salvestatud infoga või mitte.(✔)
+ * Kui ei, faili ei loeta, ja algab uus mäng(✔)
+ * kui jah, kutsutakse esile laadimismeetod:(✔)
  * 
- * meetod peaks tegutsema nii:
- * tekitatakse viis muutujat, üks iga mängu parameetri jaoks, muutujad jäetakse tühjaks.
- * eraldab failist loetud info ridadeks
- * võetakse ette esimene rida, jaotatakse osadeks, ning loetakse rea esimene väärtus, ning 
- * olenevalt väärtusest, seatakse vastavasse muutujasse rea teise elemendi väärtus
- * käiakse läbi kõik read nii
- * ja meetod tagastab Tuple.
+ * meetod peaks tegutsema nii: ✔
+ * tekitatakse viis muutujat, üks iga mängu parameetri jaoks, muutujad jäetakse tühjaks. ✔
+ * eraldab failist loetud info ridadeks ✔
+ * võetakse ette esimene rida, jaotatakse osadeks, ning loetakse rea esimene väärtus, ning  ✔
+ * olenevalt väärtusest, seatakse vastavasse muutujasse rea teise elemendi väärtus ✔
+ * käiakse läbi kõik read nii ✔
+ * ja meetod tagastab Tuple. ✔
  * 
- * Meetodist väljaspool omistatakse tuplest vastavad väärtused erinevaisse muutujaisse.
- * ning mäng algab failist loetud andmetega.
+ * Meetodist väljaspool omistatakse tuplest vastavad väärtused erinevaisse muutujaisse. ✔
+ * ning mäng algab failist loetud andmetega. ✔
  * 
  */
-
 internal class Program
 {
+    public struct Salvestus
+    {
+        // Properties
+        public int Raha;
+        public int Elud;
+        public List<String> Seljakott;
+        public KeyValuePair<bool, int> Veritsus = new KeyValuePair<bool, int>(false, 0);
+
+        // Constructor
+        public Salvestus()
+        {
+            Veritsus = new KeyValuePair<bool, int>(false, 0);
+            Seljakott = new List<string>();
+        }
+    }
+
     static void Main(string[] args)
     {
         int moni = 10;
@@ -53,111 +68,156 @@ internal class Program
         List<string> seljaKott = new List<string>();
         Random juhuArv = new Random(); //tee random generaator
         string mängijaMängib = "jah"; // vastus küsimusele kas mängija mängib
+        bool exit = false;
         KeyValuePair<bool, int> veritsus = new KeyValuePair<bool, int>(false, 0);
 
         const string saveGameLocation = "savegame.txt";
         if (File.Exists(saveGameLocation))
         {
-            string[] saveGame = File.ReadAllLines(saveGameLocation);
-            foreach (string lineString in saveGame)
+            System.Console.Write("Kas soovid jätkata mängu? [jah/ei]: ");
+            if (System.Console.ReadLine().ToLower() == "jah")
             {
-                string[] lineArray = lineString.Split(':');
-                lineArray[1]= lineArray[1].Trim();
-                switch (lineArray.ElementAt(0))
+                Salvestus salvestus = laadimine(saveGameLocation);
+                moni = salvestus.Raha;
+                elud = salvestus.Elud;
+                seljaKott = salvestus.Seljakott;
+                veritsus = salvestus.Veritsus;
+                System.Console.WriteLine("(!) Andmed laetud!");
+            }
+        }
+        do //tsükkel
+        {
+            do
+            {
+                Console.Write("Vajuta ükskõik mis klahvi et jätkata...");
+                Console.ReadLine();
+                Console.Clear();
+                int järgmineEvent = juhuArv.Next(1, 7);
+                switch (järgmineEvent)
                 {
-                    case "moni":
-                        {
-                            moni = int.Parse(lineArray[1]);
-                            break;
-                        }
-                    case "elud":
-                        {
-                            elud = int.Parse(lineArray[1]);
-                            break;
-                        }
-                    case "seljakott":
-                        {
-                            if (string.IsNullOrEmpty(lineArray[1])) { }
-                            else if (lineArray[1].Contains(','))
-                                seljaKott = lineArray[1].Split(',').ToList();
-                            else
-                                seljaKott.Add(lineArray[1]);
-                            break;
-                        }
+                    case 1:
+                        Stats(moni, elud, seljaKott, veritsus);
+                        Console.WriteLine("Kõnnid külatee peal ja vastu tuleb elukas.");
+                        Tuple<Random, int, List<string>, int> data3 = new Tuple<Random, int, List<string>, int>(juhuArv, elud, seljaKott, moni);
+                        data3 = KratiM6istatus(data3);
+                        moni = data3.Item4;
+                        elud = data3.Item2;
+                        seljaKott = data3.Item3;
+                        break;
+                    case 2:
+                        Stats(moni, elud, seljaKott, veritsus);
+                        Console.WriteLine("Kõnnid külatee peal ja vastu tuleb nõid.");
+                        elud = Nõid(juhuArv, elud);
+                        break;
+                    case 3:
+                        Stats(moni, elud, seljaKott, veritsus);
+                        Console.WriteLine("Kõnnid metsas ja vastu tuleb seen.");
+                        elud = Seen(juhuArv, elud);
+                        break;
+                    case 4:
+                        Stats(moni, elud, seljaKott, veritsus);
+                        Console.WriteLine("Kõnnid tänaval ja näed maas midagi helkimas:");
+                        seljaKott = Nuga(seljaKott);
+                        break;
+                    case 5:
+                        Stats(moni, elud, seljaKott, veritsus);
+                        Console.WriteLine("Kõnnid mööda teed ja midagi tuleb ette.");
+                        List<int> data = new List<int> { moni, elud };
+                        data = Mätas(data);
+                        moni = data[0];
+                        elud = data[1];
+                        break;
+                    case 6:
+                        Stats(moni, elud, seljaKott, veritsus);
+                        Console.WriteLine("Kõnnid poetänaval ja ette tuleb vanakraami pood, astud sisse ja näed:");
+                        Tuple<int, List<string>> data2 = new Tuple<int, List<string>>(moni, seljaKott);
+                        data2 = Pood(data2);
+                        moni = data2.Item1;
+                        seljaKott = data2.Item2;
+                        break;
+                    default:
+                        break;
+                }
+
+                if (elud > 0)
+                {
+                    System.Console.Write("Kas soovid lõpetada? [exit]: ");
+                    if (System.Console.ReadLine().ToLower() == "exit")
+                        exit = true;
+                }
+            } while (elud > 0 && !exit);
+
+            if (elud <= 0)
+            {
+                Console.WriteLine("--== Kas soovid uuesti mängida, sul on elusi 0 ==--"); //kas kasutaja soovib uuesti mängida
+                mängijaMängib = Console.ReadLine(); //saa vastus
+                if (mängijaMängib == "jah")
+                {
+                    elud = 3;
                 }
             }
-
-        }
-        else
-        {
-            do //tsükkel
+            else
             {
-                do
-                {
-                    Console.Clear();
-                    int järgmineEvent = juhuArv.Next(1, 7);
-                    switch (järgmineEvent)
+                System.Console.Write("Kas sa soovid salvestada? [jah/ei]: ");
+                if (System.Console.ReadLine().ToLower() == "jah")
+                    salvestamine(saveGameLocation, moni, elud, seljaKott, veritsus);
+            }
+
+        } while (mängijaMängib == "jah" && !exit); //tsükkel teeb järgmise ringi kui kasutaja vastab jah, kõige muu puhul katkeb
+    }
+
+    static void salvestamine(string saveGameLocation, int moni, int elud, List<string> seljakott, KeyValuePair<bool, int> veritsus)
+    {
+        List<string> andmed = new List<string>(5);
+        andmed.Add("raha: " + moni);
+        andmed.Add("elud: " + elud);
+        andmed.Add("veritsus_olek: " + veritsus.Key);
+        andmed.Add("veritsus_punktid: " + veritsus.Value);
+        andmed.Add("seljakott: " + String.Join(", ", seljakott));
+        File.WriteAllLines(saveGameLocation, andmed);
+        System.Console.WriteLine("(!) Andmed salvestatud!");
+    }
+
+    static Salvestus laadimine(string saveGameLocation)
+    {
+        Salvestus salvestus = new Salvestus();
+        string[] saveGame = File.ReadAllLines(saveGameLocation);
+        foreach (string lineString in saveGame)
+        {
+            string[] lineArray = lineString.Split(':');
+            lineArray[1] = lineArray[1].Trim();
+            switch (lineArray.ElementAt(0))
+            {
+                case "raha":
                     {
-                        case 1:
-                            Console.WriteLine("Kõnnid külatee peal ja vastu tuleb elukas.");
-                            Stats(moni, elud, seljaKott);
-                            Tuple<Random, int, List<string>, int> data3 = new Tuple<Random, int, List<string>, int>(juhuArv, elud, seljaKott, moni);
-                            data3 = KratiM6istatus(data3);
-                            moni = data3.Item4;
-                            elud = data3.Item2;
-                            seljaKott = data3.Item3;
-                            break;
-                        case 2:
-                            Console.WriteLine("Kõnnid külatee peal ja vastu tuleb nõid.");
-                            Stats(moni, elud, seljaKott);
-                            elud = Nõid(juhuArv, elud);
-                            break;
-                        case 3:
-                            Console.WriteLine("Kõnnid metsas ja vastu tuleb seen.");
-                            Stats(moni, elud, seljaKott);
-                            elud = Seen(juhuArv, elud);
-                            break;
-                        case 4:
-                            Console.WriteLine("Kõnnid tänaval ja näed maas midagi helkimas:");
-                            Stats(moni, elud, seljaKott);
-                            seljaKott = Nuga(seljaKott);
-                            break;
-                        case 5:
-                            Console.WriteLine("Kõnnid mööda teed ja midagi tuleb ette.");
-                            Stats(moni, elud, seljaKott);
-                            List<int> data = new List<int> { moni, elud };
-                            data = Mätas(data);
-                            moni = data[0];
-                            elud = data[1];
-                            break;
-                        case 6:
-                            Console.WriteLine("Kõnnid poetänaval ja ette tuleb vanakraami pood, astud sisse ja näed:");
-                            Stats(moni, elud, seljaKott);
-                            Tuple<int, List<string>> data2 = new Tuple<int, List<string>>(moni, seljaKott);
-                            data2 = Pood(data2);
-                            moni = data2.Item1;
-                            seljaKott = data2.Item2;
-                            break;
-                        default:
-                            break;
+                        salvestus.Raha = int.Parse(lineArray[1]);
+                        break;
                     }
-                    Console.WriteLine("\nVajuta ükskõik mis klahvi et jätkata");
-                    Console.ReadLine();
-                } while (elud > 0);
-
-                if (elud <= 0)
-                {
-                    Console.WriteLine("--== Kas soovid uuesti mängida, sul on elusi 0 ==--"); //kas kasutaja soovib uuesti mängida
-                    mängijaMängib = Console.ReadLine(); //saa vastus
-                    if (mängijaMängib == "jah")
+                case "elud":
                     {
-                        elud = 3;
+                        salvestus.Elud = int.Parse(lineArray[1]);
+                        break;
                     }
-                }
-
-            } while (mängijaMängib == "jah"); //tsükkel teeb järgmise ringi kui kasutaja vastab jah, kõige muu puhul katkeb
-
+                case "seljakott":
+                    {
+                        if (string.IsNullOrEmpty(lineArray[1])) { }
+                        else if (lineArray[1].Contains(','))
+                            salvestus.Seljakott = lineArray[1].Split(',').ToList();
+                        else
+                            salvestus.Seljakott.Add(lineArray[1]);
+                        break;
+                    }
+                case "veritsus_olek":
+                    int punktid = salvestus.Veritsus.Value;
+                    salvestus.Veritsus = new KeyValuePair<bool, int>(bool.Parse(lineArray[1]), punktid);
+                    break;
+                case "veritsus_punktid":
+                    bool olek = salvestus.Veritsus.Key;
+                    salvestus.Veritsus = new KeyValuePair<bool, int>(olek, int.Parse(lineArray[1]));
+                    break;
+            }
         }
+        return salvestus;
     }
 
     private static Tuple<int, List<string>> Pood(Tuple<int, List<string>> data2)
@@ -213,18 +273,19 @@ internal class Program
 
     }
 
-    private static void Stats(int moni, int elud, List<string> seljaKott)
+    private static void Stats(int moni, int elud, List<string> seljaKott, KeyValuePair<bool, int> veritsus)
     {
         Console.WriteLine("Sul on alles " + elud + " elu.");
         Console.WriteLine("Sul on rahakotis " + moni + " raha.");
+        if (veritsus.Key)
+            System.Console.WriteLine("Sa veritsed ning sul on jäänud " + veritsus.Value + " elupunkti.");
         Console.WriteLine("Sul on seljakotis " + seljaKott.Count + " asja.");
-        string sisu = "";
-        foreach (string s in seljaKott)
+        if (seljaKott.Count > 0)
         {
-            sisu += s + ", ";
+            Console.Write("Seljakotis on: " + string.Join(", ", seljaKott));
+            System.Console.WriteLine(".");
         }
-        Console.WriteLine("Seljakotis on:" + sisu);
-
+        System.Console.WriteLine();
     }
 
     private static List<int> Mätas(List<int> datas)
@@ -372,4 +433,3 @@ internal class Program
         return new Tuple<Random, int, List<string>, int>(juhuArv, elud, seljaKott, moni);
     }
 }
-
