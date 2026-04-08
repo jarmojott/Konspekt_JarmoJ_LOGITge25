@@ -26,11 +26,12 @@ namespace Aine_Lõputöö
             {
                 do
                 {
-                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("Peamenüü:");
                     Console.WriteLine("1 - Logi sisse");
                     Console.WriteLine("2 - Registreeri");
                     Console.WriteLine("3 - Lõpeta");
+                    Console.ForegroundColor = ConsoleColor.White;
                     valik = sisestaNaturaalarv("Tee oma valik numbriga: ");
                 } while (valik < 1 || valik > 3);
 
@@ -45,13 +46,14 @@ namespace Aine_Lõputöö
                                 {
                                     do
                                     {
-                                        Console.ForegroundColor = ConsoleColor.Yellow;
+                                        Console.ForegroundColor = ConsoleColor.Magenta;
                                         Console.WriteLine("Kasutaja menüü:");
                                         Console.WriteLine("1 - Vaata oma kehtivaid pileteid.");
                                         Console.WriteLine("2 - Vaata oma vanu pileteid.");
                                         Console.WriteLine("3 - Osta uus pilet.");
                                         Console.WriteLine("4 - Lunasta oma pilet.");
                                         Console.WriteLine("5 - Logi välja.");
+                                        Console.ForegroundColor = ConsoleColor.White;
                                         valik = sisestaNaturaalarv("Tee oma valik numbriga: ");
                                     } while (valik < 1 && valik > 5);
 
