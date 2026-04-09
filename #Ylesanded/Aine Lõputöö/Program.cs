@@ -1,5 +1,5 @@
 ﻿/*
-B
+B (LOGITge25 Jarmo Jõgeva)
 - Kontserdipiletiprogramm
 - -user klass on, tal on email username ja parool
 - - registreeritakse emailiga (kontrolli et on @)
@@ -11,9 +11,6 @@ B
 - kasutaja saab oma pileteid checkinida.
 - kasutaja saab vaadata ainult oma check-initud evente
 */
-
-using static System.Net.WebRequestMethods;
-
 namespace Aine_Lõputöö
 {
     internal class Program
@@ -123,7 +120,6 @@ namespace Aine_Lõputöö
                     Console.Write("(!) Vajuta jätkamiseks suvalist klahvi...");
                     Console.ReadLine();
                     Console.Clear();
-
                 }
                 else
                 {
@@ -141,61 +137,6 @@ namespace Aine_Lõputöö
                     Console.WriteLine("(!) Puuduvad kehtivad piletid.");
                 else
                     Console.WriteLine("(!) Puuduvad kehtetud piletid.");
-                
-            }
-        }
-
-        static void kuvaKehtivadPiletid(List<Pilet> piletid, Kasutaja kasutaja)
-        {
-            Console.Clear();
-            int i = 0;
-            foreach (var pilet in piletid)
-            {
-                if (pilet.Kasutaja.Equals(kasutaja) && pilet.kehtib)
-                {
-                    i++;
-                    Console.WriteLine(i + ". " + pilet.Üritus.Nimi);
-                }
-            }
-            if (i > 0)
-            {
-                Console.WriteLine("Kehtivaid pileteid kokku: " + i + "tk");
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("(!) Vajuta jätkamiseks suvalist klahvi...");
-                Console.ReadLine();
-                Console.Clear();
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("(!) Puuduvad kehtivad piletid.");
-            }
-        }
-
-        static void kuvaKehtetudPiletid(List<Pilet> piletid, Kasutaja kasutaja)
-        {
-            Console.Clear();
-            int i = 0;
-            foreach (var pilet in piletid)
-            {
-                if (pilet.Kasutaja.Equals(kasutaja) && !pilet.kehtib)
-                {
-                    i++;
-                    Console.WriteLine(i + ". " + pilet.Üritus.Nimi);
-                }
-            }
-            if (i > 0)
-            {
-                Console.WriteLine("Kehtetuid pileteid kokku: " + i + "tk");
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("(!) Vajuta jätkamiseks suvalist klahvi...");
-                Console.ReadLine();
-                Console.Clear();
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("(!) Puuduvad kehtetud piletid.");
             }
         }
 
@@ -286,7 +227,6 @@ namespace Aine_Lõputöö
 
         }
 
-
         static Kasutaja looKasutaja()
         {
             Console.Clear();
@@ -304,22 +244,36 @@ namespace Aine_Lõputöö
             string sisestus = String.Empty;
             do
             {
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.Write(tekst);
                 sisestus = Console.ReadLine().Trim();
+                if (string.IsNullOrEmpty(sisestus))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("(!) Puudub sisestatud väärtus.");
+                } else if (sisestus.Contains(' '))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("(!) Tühikud pole lubatud.");
+                }
             }
             while (string.IsNullOrEmpty(sisestus) || sisestus.Contains(' '));
             return sisestus;
         }
-
 
         static string sisestaEpost()
         {
             string[] ePostiOsad = Array.Empty<string>();
             do
             {
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.Write("Sisesta oma e-posti aadress: ");
                 ePostiOsad = Console.ReadLine().Trim().ToLower().Split('@');
-
+                if (ePostiOsad.Length != 2 || !ePostiOsad[1].Contains('.'))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("(!) Ei ole sobilik e-post.");
+                }
             }
             while (ePostiOsad.Length != 2 || !ePostiOsad[1].Contains('.'));
             return string.Join("", ePostiOsad);
@@ -337,7 +291,7 @@ namespace Aine_Lõputöö
                 if (!kontroll || sisestus < 0)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("(!) Ei ole sobilik naturaalarv");
+                    Console.WriteLine("(!) Ei ole sobilik naturaalarv.");
                 }
             }
             while (!kontroll || sisestus < algus || sisestus > lõpp);
