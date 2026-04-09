@@ -18,15 +18,16 @@ namespace Aine_Lõputöö
         static void Main(string[] args)
         {
             List<Kasutaja> kasutajad = new List<Kasutaja>();
-            kasutajad.Add(new Kasutaja("proov1@test.ee", "1", "1"));
-            kasutajad.Add(new Kasutaja("proov2@test.ee", "2", "2"));
+            kasutajad.Add(new Kasutaja("proov1@test.ee", "1", "1")); //test andmed
+            kasutajad.Add(new Kasutaja("proov2@test.ee", "2", "2")); //test andmed
 
             List<Üritus> üritused = new List<Üritus>();
-            üritused.Add(new Üritus("Õllesummer", 24.99));
-            üritused.Add(new Üritus("Luikede järv", 49.99));
+            üritused.Add(new Üritus("Õllesummer (festival)", 14.99));
+            üritused.Add(new Üritus("Luikede järv (ballett)", 29.99));
+            üritused.Add(new Üritus("Ooperifantoom (muusikal)", 59.99));
 
             List<Pilet> piletid = new List<Pilet>();
-            piletid.Add(new Pilet(kasutajad[1], üritused[0].Hind, üritused[0]));
+            piletid.Add(new Pilet(kasutajad[1], üritused[0].Hind, üritused[0])); //test andmed
 
             int valik = -1;
             do
